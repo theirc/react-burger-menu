@@ -481,7 +481,7 @@ describe('menuFactory', () => {
           this.state = { example: true };
         }
         render() {
-          return <Menu ref="menu" isOpen={this.state.example} />;
+          return <Menu isOpen={this.state.example} />;
         }
       }
 
@@ -497,7 +497,7 @@ describe('menuFactory', () => {
           this.state = { example: false };
         }
         render() {
-          return <Menu ref="menu" isOpen={this.state.example} />;
+          return <Menu isOpen={this.state.example} />;
         }
       }
 
@@ -553,7 +553,7 @@ describe('menuFactory', () => {
             this.setState({ example: !this.state.example });
           }
           render() {
-            return <Menu ref="menu" />;
+            return <Menu />;
           }
         }
 
@@ -574,7 +574,7 @@ describe('menuFactory', () => {
             this.setState({ example: !this.state.example });
           }
           render() {
-            return <Menu ref="menu" isOpen />;
+            return <Menu isOpen />;
           }
         }
 
@@ -594,7 +594,7 @@ describe('menuFactory', () => {
             this.setState({ example: !this.state.example });
           }
           render() {
-            return <Menu ref="menu" right={ this.state.example } />;
+            return <Menu right={ this.state.example } />;
           }
         }
 
@@ -616,7 +616,7 @@ describe('menuFactory', () => {
             this.setState({ example: !this.state.example });
           }
           render() {
-            return <Menu ref="menu" isOpen />;
+            return <Menu isOpen />;
           }
         }
 
@@ -638,7 +638,7 @@ describe('menuFactory', () => {
             this.setState({ example: false });
           }
           render() {
-            return <Menu ref="menu" onStateChange={ callback } isOpen={ this.state.example } />;
+            return <Menu onStateChange={ callback } isOpen={ this.state.example } />;
           }
         }
 
@@ -658,7 +658,7 @@ describe('menuFactory', () => {
             this.setState({ example: true });
           }
           render() {
-            return <Menu ref="menu" onStateChange={ callback } isOpen={ this.state.example } />;
+            return <Menu onStateChange={ callback } isOpen={ this.state.example } />;
           }
         }
 
